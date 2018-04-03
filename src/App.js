@@ -14,6 +14,8 @@ class App extends Component {
     this.getTasks();
   }
 
+  //hello
+
   getTasks = async () => {
     const taskLength = await projectGrunt.methods.getTaskCount().call();
     const tasks = await Promise.all(
